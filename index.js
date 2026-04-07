@@ -7,7 +7,6 @@ const client = new Client({
     }),
     puppeteer: {
         headless: true,
-	executablePath: '/usr/bin/chromium-browser',
         args: [
             '--no-sandbox',
             '--disable-setuid-sandbox',
@@ -52,7 +51,7 @@ client.on('qr', qr => {
 
 // READY
 client.on('ready', () => {
-    console.log("Bot ringan siap 🚀");
+    console.log("Bot siap 🚀");
 });
 
 // 🔥 MAIN
@@ -74,7 +73,10 @@ client.on('message_create', async message => {
 
         if (isBad) {
             await message.delete(true);
-            await message.reply("⚠️ Jangan ngomong kasar!");
+
+	    const sender = message.author || message.from;
+
+            await client.sendMessage(message.from, "⚠️ @${sender.split('@')[0]} KATA KASAR TERDETEKSI!", {mentions: [sender]});
         }
 
     } catch (err) {
