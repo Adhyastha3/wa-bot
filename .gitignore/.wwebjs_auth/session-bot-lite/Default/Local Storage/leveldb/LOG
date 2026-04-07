@@ -1,0 +1,5 @@
+2026/04/07-18:07:32.937 1558 Creating DB D:\wa-bot\.wwebjs_auth\session-bot-lite\Default\Local Storage\leveldb since it was missing.
+2026/04/07-18:07:32.993 1558 Reusing MANIFEST D:\wa-bot\.wwebjs_auth\session-bot-lite\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/07-19:31:21.289 1558 Level-0 table #5: started
+2026/04/07-19:31:21.332 1558 Level-0 table #5: 20787 bytes OK
+2026/04/07-19:31:21.344 1558 Delete type=0 #3
