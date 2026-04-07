@@ -13,8 +13,8 @@ const client = new Client({
             '--disable-dev-shm-usage',
 	    '--no-first-run',
 	    '--no-zygote',
-	    '--single-process'
-	    '--disable-gpu'
+	    '--single-process',
+	    '--disable-gpu',
         ]
     }
 });
